@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Krypton Hospitality — Websites para hotelaria</title>
+<meta name="description" content="Websites rápidos e elegantes para hotéis, guesthouses e alojamento local.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Jost:wght@400;500&display=swap">
+<style>
+:root{--bg:#000;--surface:#12100c;--line:#3a2f14;--gold:#d4a937;--gold-hi:#e3bc4f;--text:#f3ecda;--muted:#b5aa8f;--serif:"Cormorant Garamond",Georgia,"Times New Roman",serif;--sans:"Jost","Helvetica Neue",Arial,sans-serif;color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#000;--surface:#12100c;--line:#3a2f14;--gold:#d4a937;--gold-hi:#e3bc4f;--text:#f3ecda;--muted:#b5aa8f}}
+:root[data-theme="dark"]{--bg:#000;--surface:#12100c;--line:#3a2f14;--gold:#d4a937;--gold-hi:#e3bc4f;--text:#f3ecda;--muted:#b5aa8f}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:400 17px/1.65 var(--sans)}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--gold-hi);outline-offset:3px}
+.wrap{max-width:720px;margin:0 auto;padding:0 24px}
+header{display:flex;justify-content:space-between;align-items:center;padding:20px 24px;max-width:720px;margin:0 auto}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font:500 22px var(--serif);letter-spacing:.04em}
+.brand svg{width:34px;height:20px}
+.nav{font-size:15px;color:var(--muted);text-decoration:none}
+.nav:hover{color:var(--gold-hi)}
+.hero{text-align:center;padding:48px 0 72px}
+.hero svg{width:min(240px,62vw);height:auto;margin-bottom:28px}
+.arc{stroke-dasharray:1;stroke-dashoffset:0;animation:draw 1.8s ease-out both}
+@keyframes draw{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@media (prefers-reduced-motion:reduce){.arc{animation:none}html{scroll-behavior:auto}}
+h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1.12;margin:0}
+h1{font-size:clamp(38px,9vw,60px);letter-spacing:.01em}
+.lead{color:var(--muted);max-width:30em;margin:20px auto 32px}
+.btn{display:inline-block;background:var(--gold);color:#000;text-decoration:none;font-weight:500;padding:14px 28px;border-radius:2px}
+.btn:hover{background:var(--gold-hi)}
+.ghost{display:inline-block;margin:16px 0 0 18px;color:var(--gold-hi);text-decoration:none;border-bottom:1px solid var(--line)}
+section{padding:64px 0;border-top:1px solid var(--line)}
+h2{font-size:clamp(30px,6.5vw,42px);margin-bottom:28px}
+.why p{margin:0 0 20px;padding-left:18px;border-left:2px solid var(--gold)}
+.why strong{display:block;font:500 22px var(--serif);color:var(--gold-hi)}
+.why span{color:var(--muted)}
+.pack{display:grid;grid-template-columns:1fr auto;gap:6px 20px;padding:26px 0;border-bottom:1px solid var(--line)}
+.pack:first-of-type{border-top:1px solid var(--line)}
+.pack h3{font-size:28px}
+.pack .price{font:500 28px var(--serif);color:var(--gold-hi);text-align:right}
+.pack p{grid-column:1/-1;margin:0;color:var(--muted)}
+.pack small{grid-column:1/-1;color:var(--muted);font-size:14px}
+.pack.main{background:var(--surface);border:1px solid var(--gold);padding:26px 20px;margin:10px -20px}
+.badge{display:inline-block;margin-left:10px;font:500 13px var(--sans);color:#000;background:var(--gold);padding:2px 10px;border-radius:2px;vertical-align:middle}
+.note{color:var(--muted);font-size:14px;margin-top:20px}
+ol{list-style:none;padding:0;margin:0;counter-reset:s}
+li{counter-increment:s;display:grid;grid-template-columns:44px 1fr;margin-bottom:22px}
+li::before{content:counter(s);font:500 34px/1 var(--serif);color:var(--gold)}
+li strong{display:block;font:500 22px var(--serif)}
+li span{color:var(--muted)}
+.contact{text-align:center}
+.contact p{color:var(--muted);max-width:28em;margin:0 auto 28px}
+.demo{margin:0 0 22px;border:1px solid var(--line)}
+.shot{position:relative;overflow:hidden;height:180px;display:flex;align-items:flex-end;padding:16px 18px;font:500 28px var(--serif);color:#fff}
+.shot svg{position:absolute;inset:0;width:100%;height:100%}
+.shot span{position:relative}
+.shot.a{background:#1d3b45}.shot.b{background:#4a2f1d}.shot.c{background:#27402c}
+.meta{padding:16px 18px;color:var(--muted)}
+.meta strong{display:block;color:var(--text);font:500 20px var(--serif)}
+.tag{display:inline-block;margin-bottom:8px;font-size:13px;color:var(--gold-hi);border:1px solid var(--line);padding:1px 10px;border-radius:2px}
+footer{border-top:1px solid var(--line);padding:28px 24px;text-align:center;color:var(--muted);font-size:14px}
+</style>
+</head>
+<body>
+<header>
+<a class="brand" href="#" aria-label="Krypton Hospitality">
+<svg viewBox="96 24 190 106" aria-hidden="true"><path d="M140 30h28v95h-28zM168 72l37-42h33l-46 50zM168 92l24-12 48 45h-34z" fill="#d4a937"/></svg>
+Krypton Hospitality</a>
+<a class="nav" href="#contacto">Contacto</a>
+</header>
+
+<main class="wrap">
+<div class="hero">
+<svg viewBox="96 24 190 106" role="img" aria-label="Símbolo Krypton Hospitality">
+<path d="M140 30h28v95h-28zM168 72l37-42h33l-46 50z" fill="#d4a937"/>
+<path d="M168 92l24-12 48 45h-34z" fill="#c79a2b"/>
+<path d="M250 62h8v38h-8zM261 50h9v52h-9zM273 64h8v43h-8z" fill="#e3bc4f"/>
+<path d="M248 106h5v5h-5zM255 106h5v5h-5zM248 113h5v5h-5zM255 113h5v5h-5z" fill="#d4a937"/>
+<path class="arc" pathLength="1" d="M100 118Q190 62 282 112" fill="none" stroke="#e3bc4f" stroke-width="3" stroke-linecap="round"/>
+</svg>
+<h1>Sites de hotel que trazem reservas diretas</h1>
+<p class="lead">Criamos websites rápidos, elegantes e fáceis de gerir para hotéis, guesthouses e alojamento local, e tratamos do conteúdo para as suas redes sociais.</p>
+<a class="btn" href="#contacto">Pedir uma proposta</a><a class="ghost" href="#pacotes">Ver pacotes</a>
+</div>
+
+<section class="why">
+<h2>Um site que trabalha por si</h2>
+<p><strong>Mais reservas diretas</strong><span>Um site próprio e bem feito reduz a dependência das comissões das plataformas.</span></p>
+<p><strong>Pensado para o telemóvel</strong><span>Grande parte dos hóspedes pesquisa no telemóvel. O seu site abre depressa e lê-se bem em qualquer ecrã.</span></p>
+<p><strong>Para hóspedes de todo o mundo</strong><span>Versões em vários idiomas, com a mesma elegância do seu alojamento.</span></p>
+</section>
+
+<section id="portfolio">
+<h2>Projetos conceito</h2>
+<p class="note" style="margin:-12px 0 28px">Exemplos criados para mostrar o estilo e o que cada tipo de alojamento pode ter. São projetos de demonstração, não clientes reais.</p>
+<div class="demo"><div class="shot a"><svg viewBox="0 0 600 180" preserveAspectRatio="xMaxYMid slice" aria-hidden="true"><defs><pattern id="wa" width="26" height="20" patternUnits="userSpaceOnUse"><rect x="9" y="5" width="8" height="10" fill="#e3bc4f"/></pattern></defs><circle cx="110" cy="42" r="16" fill="#e8d9a8"/><rect x="270" y="78" width="60" height="52" fill="#25505d"/><rect x="450" y="62" width="84" height="68" fill="#25505d"/><rect x="330" y="28" width="120" height="102" fill="#2c5a68"/><rect x="330" y="34" width="120" height="96" fill="url(#wa)"/><rect y="130" width="600" height="50" fill="#14282f"/></svg><span>Hotel Baía Serena</span></div><div class="meta"><span class="tag">Projeto conceito</span><strong>Hotel de cidade, pacote Profissional</strong>Cinco páginas, quartos em destaque, dois idiomas e botão de reserva em todas as páginas.</div></div>
+<div class="demo"><div class="shot b"><svg viewBox="0 0 600 180" preserveAspectRatio="xMaxYMid slice" aria-hidden="true"><circle cx="520" cy="46" r="24" fill="#e3bc4f"/><rect x="310" y="78" width="190" height="52" fill="#7a4f2e"/><polygon points="298,78 405,38 512,78" fill="#2e1c10"/><rect x="395" y="96" width="20" height="34" fill="#2e1c10"/><rect x="328" y="92" width="26" height="20" fill="#e3bc4f"/><rect x="456" y="92" width="26" height="20" fill="#e3bc4f"/><rect y="130" width="600" height="50" fill="#2a190d"/></svg><span>Pousada Mirante do Sol</span></div><div class="meta"><span class="tag">Projeto conceito</span><strong>Guesthouse, pacote Essencial</strong>Uma página com galeria, mapa, contactos e ligação direta por mensagem.</div></div>
+<div class="demo"><div class="shot c"><svg viewBox="0 0 600 180" preserveAspectRatio="xMaxYMid slice" aria-hidden="true"><circle cx="120" cy="40" r="14" fill="#e8d9a8"/><polygon points="250,130 272,64 294,130" fill="#1d3322"/><polygon points="290,130 316,50 342,130" fill="#18291c"/><polygon points="540,130 560,72 580,130" fill="#1d3322"/><rect x="360" y="88" width="150" height="42" fill="#5a7a45"/><polygon points="350,88 435,52 520,88" fill="#1a2b1d"/><rect x="376" y="100" width="22" height="18" fill="#e3bc4f"/><rect x="472" y="100" width="22" height="18" fill="#e3bc4f"/><rect y="130" width="600" height="50" fill="#1a2b1d"/><ellipse cx="250" cy="156" rx="260" ry="8" fill="#3e6b73"/></svg><span>Lodge Rio Dourado</span></div><div class="meta"><span class="tag">Projeto conceito</span><strong>Alojamento de natureza, pacote Premium</strong>Três idiomas, fotografias em grande formato, blogue e relatório mensal de visitas.</div></div>
+</section>
+
+<section id="pacotes">
+<h2>Pacotes</h2>
+<div class="pack"><h3>Essencial</h3><div class="price">250.000 Kz</div><p>Uma página adaptada ao telemóvel, com galeria, contactos, mapa e botão de reserva.</p><small>Manutenção opcional: 20.000 Kz por mês</small></div>
+<div class="pack main"><h3>Profissional<span class="badge">Mais escolhido</span></h3><div class="price">550.000 Kz</div><p>Até cinco páginas (quartos, serviços, galeria, localização e contacto), dois idiomas, otimização básica para o Google e ligação ao seu motor de reservas.</p><small>Manutenção opcional: 40.000 Kz por mês</small></div>
+<div class="pack"><h3>Premium</h3><div class="price">1.200.000 Kz</div><p>Tudo do Profissional, com três idiomas, blogue, fotografias tratadas, otimização de velocidade e relatório mensal de visitas.</p><small>Manutenção opcional: 80.000 Kz por mês</small></div>
+<p class="note">Domínio e alojamento do site ficam a cargo do cliente. Pagamento em duas partes: 50% no início e 50% na entrega.</p>
+</section>
+
+<section id="redes">
+<h2>Conteúdo para redes sociais</h2>
+<p class="note" style="margin:-12px 0 28px">Vídeos e publicações para o seu alojamento aparecer onde os hóspedes procuram.</p>
+<div class="pack"><h3>Arranque</h3><div class="price">60.000 Kz</div><p>Um vídeo curto editado com o material do seu alojamento, publicado no TikTok e no Instagram, com legendas e hashtags pensadas para atrair hóspedes. Deixamos o perfil com localização e contactos bem visíveis.</p></div>
+<div class="pack main"><h3>Impulso</h3><div class="price">160.000 Kz</div><p>Três vídeos curtos com imagens captadas no local, publicados no TikTok, Instagram e Facebook, mais stories. Inclui um calendário de publicações para duas semanas, com legendas e hashtags.</p></div>
+<div class="pack"><h3>Referência</h3><div class="price">280.000 Kz</div><p>Seis vídeos com captação completa do espaço, publicados em todas as redes e no catálogo do WhatsApp. Inclui destaques fixos no perfil (quartos, serviços e localização), calendário para um mês e um resumo dos resultados no fim.</p></div>
+<p class="note">Valores por pacote, em pagamento único.</p>
+</section>
+
+<section>
+<h2>Como trabalhamos</h2>
+<ol>
+<li><div><strong>Conversa</strong><span>Percebemos o seu alojamento, os seus hóspedes e o que quer do site.</span></div></li>
+<li><div><strong>Proposta</strong><span>Mostramos como o site vai ficar antes de avançar.</span></div></li>
+<li><div><strong>Publicação</strong><span>Colocamos o site no ar e ficamos disponíveis para o que precisar.</span></div></li>
+</ol>
+</section>
+
+<section class="contact" id="contacto">
+<h2>Vamos falar do seu hotel</h2>
+<p>Diga-nos o nome do seu alojamento e respondemos com uma proposta, sem compromisso.</p>
+<a class="btn" href="https://wa.me/244937343315">Falar no WhatsApp</a>
+<p class="note" style="margin:18px 0 0">WhatsApp: 937 343 315</p>
+</section>
+</main>
+<footer>© 2026 Krypton Hospitality. Websites para hotelaria.</footer>
+</body>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </html>
